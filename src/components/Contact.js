@@ -52,7 +52,7 @@ export default function Contact () {
             Hire Me
           </h2>
           <p className='leading-relaxed mb-5'>
-            Want to work together or have any questions?
+            Want to work together or have any questions? Send a message below or email me at ben.havis1@gmail.com
           </p>
           <div className='relative mb-4'>
             <label htmlFor='name' className='leading-7 text-sm text-gray-400'>
