@@ -43,9 +43,9 @@ export default function Contact () {
           />
         </div>
         <form
-          data-netlify="true"
+          data-netlify='true'
           name='contact'
-					method="POST"
+          method='POST'
           onSubmit={handleSubmit}
           className='lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0'
         >
@@ -63,6 +63,7 @@ export default function Contact () {
               type='text'
               id='name'
               name='name'
+              value='contact'
               className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
               onChange={(e) => setName(e.target.value)}
             />
@@ -73,6 +74,7 @@ export default function Contact () {
             </label>
             <input
               type='email'
+							value='contact'
               id='email'
               name='email'
               className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
@@ -88,6 +90,7 @@ export default function Contact () {
             </label>
             <textarea
               id='message'
+							value='contact'
               name='message'
               className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
               onChange={(e) => setMessage(e.target.value)}
