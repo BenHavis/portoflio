@@ -1,4 +1,12 @@
 export const projects = [
+	{
+		title: "Todo App",
+		subtitle: "React useState",
+		description:
+		"An app that allows users to add todo items to a list, along with the ability to remove and edit them",
+		image: "./project-2.gif",
+		link: "https://agitated-dijkstra-dec76b.netlify.app/",
+	},
 
   {
     title: "Monsters Rolodex",
