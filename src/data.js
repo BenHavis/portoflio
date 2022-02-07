@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: "Feedback UI",
+		subtitle: "React useEffect",
+		description: "An app that allows users to add feedback, as well as edit and delete",
+		image: "",
+		link: "https://determined-haibt-0d51f6.netlify.app/"
+	},
+
+	{
 		title: "Todo App",
 		subtitle: "React useState",
 		description:
