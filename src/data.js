@@ -3,7 +3,7 @@ export const projects = [
 		title: "Feedback UI",
 		subtitle: "React useEffect",
 		description: "An app that allows users to add feedback, as well as edit and delete",
-		image: "",
+		image: "./project-1.gif",
 		link: "https://determined-haibt-0d51f6.netlify.app/"
 	},
 
