@@ -38,7 +38,7 @@ export const testimonials = [
   {
     quote:
       "Ben has done a fantastic job overall. Not only the site is to design, the code is very clean and slick. Love the way he achieved the translations portion of the site.",
-    name: "Nick B.",
+    name: "Carlo M.",
  
   },
   {
