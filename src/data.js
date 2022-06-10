@@ -32,6 +32,14 @@ export const projects = [
     image: "./project-4.gif",
     link: "https://reactportfolio.com/",
   },
+	{
+    title: "Carlo The Ace",
+    subtitle: "Firebase",
+    description:
+      "A freelance project created for a client that showcases his digital photography, and utlizes firebase to store the photos",
+    image: "./project-5.jpg",
+    link: "https://www.carlotheace.com/",
+  },
 ];
 
 export const testimonials = [
