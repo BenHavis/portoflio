@@ -57,3 +57,9 @@
 .button:hover {
   background-color: #005ec2;
 }
+.confirmation {
+  text-align: center;
+  font-size: 1.1rem;
+  color: green;
+  margin-top: 30px;
+}
