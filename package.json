@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@netlify/next": "^1.4.9",
     "framer-motion": "^11.18.2",
     "next": "^15.3.3",

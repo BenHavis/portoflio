@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import styles from './contact.module.css';
 
 const ContactPage: React.FC = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("xwpbnkjd");
 
   return (
     <section className={styles.contactPage}>
@@ -13,37 +14,41 @@ const ContactPage: React.FC = () => {
         Feel free to reach out to me for opportunities, collaboration, or just to connect!
       </p>
 
-      {submitted ? (
+      {state.succeeded ? (
         <p className={styles.confirmation}>Thanks! Your message has been sent.</p>
       ) : (
-        <form
-          className={styles.form}
-          action="https://formspree.io/f/xwpbnkjd"
-          method="POST"
-          onSubmit={() => setSubmitted(true)}
-        >
+        <form onSubmit={handleSubmit} className={styles.form}>
           <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            className={styles.input}
-            required
-          />
-          <input
+            id="email"
             type="email"
             name="email"
             placeholder="Your Email"
             className={styles.input}
             required
           />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
+
           <textarea
+            id="message"
             name="message"
             placeholder="Your Message"
-            className={styles.textarea}
             rows={5}
+            className={styles.textarea}
             required
-          ></textarea>
-          <button type="submit" className={styles.button}>Send Message</button>
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+
+          <button type="submit" className={styles.button} disabled={state.submitting}>
+            Send Message
+          </button>
         </form>
       )}
     </section>
