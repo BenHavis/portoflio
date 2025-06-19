@@ -4,7 +4,9 @@ import styles from "./page.module.css";
 import About from "@components/about/page";
 import AboutMe from "@/app/aboutme/page";
 import ProjectsPage from "./projects/page";
+import ContactPage from "./contact/page";
 import AnimatedSection from "@components/AnimatedSection";
+
 
 
 const Home: FC = () => {
@@ -29,11 +31,8 @@ const Home: FC = () => {
         <div className={styles.timeline}>{/* Work experience timeline */}</div>
       </AnimatedSection>
 
-      <AnimatedSection className={styles.contact} id="contact" animateOnScroll>
-        <h2 className={styles.sectionTitle}>Get In Touch</h2>
-        <div className={styles.contactInfo}>
-          {/* Contact information or form */}
-        </div>
+       <AnimatedSection id="contact" animateOnScroll>
+        <ContactPage />
       </AnimatedSection>
     </main>
   );
