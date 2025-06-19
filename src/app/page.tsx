@@ -5,6 +5,7 @@ import About from "@components/about/page";
 import AboutMe from "@/app/aboutme/page";
 import ProjectsPage from "./projects/page";
 import ContactPage from "./contact/page";
+import ExperiencePage from "./experience/page";
 import AnimatedSection from "@components/AnimatedSection";
 
 
@@ -26,9 +27,8 @@ const Home: FC = () => {
         <ProjectsPage />
       </AnimatedSection>
 
-      <AnimatedSection className={styles.experience} animateOnScroll>
-        <h2 className={styles.sectionTitle}>Professional Experience</h2>
-        <div className={styles.timeline}>{/* Work experience timeline */}</div>
+      <AnimatedSection id="experience" animateOnScroll>
+        <ExperiencePage />
       </AnimatedSection>
 
        <AnimatedSection id="contact" animateOnScroll>
