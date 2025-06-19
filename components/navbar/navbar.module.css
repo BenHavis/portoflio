@@ -1,0 +1,78 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 15, 0.8); /* Slightly transparent dark background */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #6366f1; /* Indigo accent color */
+  }
+  
+  .links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #a0aec0; /* Light gray */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  .link:hover {
+    color: white;
+  }
+  
+  .link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #6366f1; /* Indigo accent color */
+    transition: width 0.3s ease;
+  }
+  
+  .link:hover::after {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .links {
+      gap: 1rem;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    .link {
+      font-size: 0.9rem;
+    }
+  }
