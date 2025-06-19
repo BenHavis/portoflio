@@ -1,18 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './contact.module.css';
 
 const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    if (window.location.hash === '#success') {
-      setSubmitted(true);
-      // Remove the hash so refreshing doesn't show the message again
-      history.replaceState(null, '', window.location.pathname);
-    }
-  }, []);
 
   return (
     <section className={styles.contactPage}>
@@ -21,25 +13,15 @@ const ContactPage: React.FC = () => {
         Feel free to reach out to me for opportunities, collaboration, or just to connect!
       </p>
 
-      {/* Hidden fallback form for Netlify build-time detection */}
-      <form name="contact" hidden data-netlify="true">
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message" />
-      </form>
-
       {submitted ? (
         <p className={styles.confirmation}>Thanks! Your message has been sent.</p>
       ) : (
         <form
           className={styles.form}
-          name="contact"
+          action="https://formspree.io/f/xwpbnkjd"
           method="POST"
-          data-netlify="true"
-          action="#success"
+          onSubmit={() => setSubmitted(true)}
         >
-          <input type="hidden" name="form-name" value="contact" />
-
           <input
             type="text"
             name="name"

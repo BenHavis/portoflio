@@ -18,13 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* ✅ Hidden Netlify form for backend recognition */}
-        <form name="contact" data-netlify="true" hidden>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <textarea name="message"></textarea>
-        </form>
-
         <Navbar />
         {children}
       </body>
