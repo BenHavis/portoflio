@@ -334,6 +334,67 @@
   margin-top: 30px;
 }
 
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/experience/experience.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.experience_experiencePage__zFc45 {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience_title__tci2w {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.experience_card__S8yPU {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.experience_position__P0M1V {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.experience_company__GMk5h {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.experience_date___fsm5 {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.experience_list__S_Vx1 {
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #444;
+}
+
+.experience_list__S_Vx1 li {
+  list-style: disc;
+  margin-bottom: 6px;
+}
+
+.experience_stack__sPwNp {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
