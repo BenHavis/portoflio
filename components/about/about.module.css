@@ -1,0 +1,241 @@
+/* components/about/about.module.css */
+.container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 50% 50%, rgba(17, 24, 39, 1), rgba(10, 14, 23, 1));
+    padding: 2rem;
+  }
+  
+  .gridPattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    opacity: 0.1;
+  }
+  
+  .gridItem {
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  .glowOrb {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15), transparent 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    top: 50%;
+    right: 0;
+    transform: translate(20%, -50%);
+  }
+  
+  .content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .introText {
+    margin-bottom: 2rem;
+  }
+  
+  .greeting {
+    display: block;
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: #6366f1;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(45deg, #fff, rgba(255, 255, 255, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .highlight {
+    display: block;
+    font-size: 0.5em;
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 90%;
+  }
+  
+  .statGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .statNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .statLabel {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .primaryButton, .secondaryButton {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .buttonContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .buttonIcon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .primaryButton {
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    color: white;
+  }
+  
+  .primaryButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+  }
+  
+  .primaryButton:hover .buttonIcon {
+    transform: translateX(4px);
+  }
+  
+  .secondaryButton {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+  }
+  
+  .secondaryButton:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .mainImage {
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.2));
+  }
+  
+  .imageBg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.2), transparent 70%);
+    filter: blur(40px);
+    z-index: 1;
+  }
+  
+  @media (max-width: 1024px) {
+    .content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .imageContainer {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+    }
+  
+    .buttonGroup {
+      flex-direction: column;
+    }
+  
+    .statGrid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
